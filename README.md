@@ -3,6 +3,8 @@
 ## 📝 Descripción del Proyecto
 Este proyecto realiza un análisis exploratorio profundo sobre el volumen histórico, la normalización de goles y los perfiles de las selecciones combinadas a lo largo de la historia de los mundiales. El objetivo es proporcionar una perspectiva objetiva y cuantitativa sobre la evolución del torneo.
 
+👉 **[Ver World Cup Intelligence Hub en Streamlit](https://proyecto-eda-mundiales-diegolopez-4tst4uj4zxmnt9utjdalqm.streamlit.app/)**
+
 ## 📂 Estructura del Repositorio
 * **`data/`**: Contiene los archivos datasets en formato CSV con los registros históricos de partidos y resúmenes de equipos.
 * **`notebooks/`**: Contiene el Jupyter Notebook (`analisis.ipynb`) con todo el desarrollo del código, gráficas y la síntesis final.
