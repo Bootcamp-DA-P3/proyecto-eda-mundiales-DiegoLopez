@@ -51,13 +51,10 @@ st.markdown("""
 # 2. CAPA DE GESTIÓN Y CARGA SEGURA DE DATOS
 # ==============================================================================
 archivo_nombre = "WorldCupMatches-selected-columns.csv"
-if os.path.exists(archivo_nombre):
+ruta_al_csv = os.path.join("data", archivo_nombre)
+
+if not os.path.exists(ruta_al_csv):
     ruta_al_csv = archivo_nombre
-elif os.path.exists(os.path.join("data", archivo_nombre)):
-    ruta_al_csv = os.path.join("data", archivo_nombre)
-else:
-    carpeta_actual = os.path.dirname(os.path.abspath(__file__)) if "__file__" in locals() else "."
-    ruta_al_csv = os.path.join(carpeta_actual, archivo_nombre)
 
 df = pd.read_csv(ruta_al_csv)
 
